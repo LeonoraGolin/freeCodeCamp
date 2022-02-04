@@ -25,5 +25,6 @@ function factorialize(num) {
   }  
   return fat;
 }
+factorialize(5);
 
 
