@@ -27,4 +27,22 @@ function factorialize(num) {
 }
 factorialize(5);
 
+#função que retorna o comprimento da palavra mais longa na frase fornecida
+function maiorPalavra(str) {
+  let myArr = str.split(' ');
+  let max = 0;  
+  for (let i=0; i<myArr.length; i++)
+     if (myArr[i].length > max) {
+       max = myArr[i].length;
+     }  
+  return max;
+}
+maiorPalavra("O submarino japonês foi atacado por mísseis americanos.");
+
+#função que retorna quantidade de palavras em uma string
+function quantidadePalavras(str) {
+  let myArr = str.split(' ');
+ return myArr.length;
+}
+quantidadePalavras("O submarino japonês foi atacado por mísseis americanos.");
 
